@@ -11,12 +11,29 @@
     <nav>
         <ul>
             <li><a href="about.html">เกี่ยวกับเรา</a></li>
-            <li><a href="services.html">บริการของเรา</a></li>
+            <li><a href="services.html">บริการของเรา1</a></li>
             <li><a href="contact.html">ติดต่อเรา</a></li>
             <li><a href="blog.html">บทความ</a></li>
             <li><a href="login.html">สมัครสมาชิก</a></li>
         </ul>
     </nav>
+    <title>เลือกภูมิภาค</title>
+    <script>
+        function goToPage() {
+            var selectedOption = document.getElementById("regionSelect").value;
+            if (selectedOption) {
+                window.location.href = selectedOption;
+            }
+        }
+    </script>
+    <select id="regionSelect">
+        <option value="">-- กรุณาเลือก --</option>
+        <option value="Art/indexart.html">ART TOY</option>
+        <option value="model/West.html">MODEL</option>
+    </select>
 
+    <br><br>
+
+    <button onclick="goToPage()">ไปยังหน้าที่เลือก</button>
 </body>
 </html>
