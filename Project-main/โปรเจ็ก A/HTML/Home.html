@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chibi Style Responsive Layout</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- เชื่อมโยงไฟล์ CSS -->
+    <style>
+        /* เพิ่ม CSS ที่นี่เพื่อควบคุมบล็อก */
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px; /* ช่องว่างระหว่างบล็อก */
+            padding: 10px;
+        }
+
+        .block {
+            flex: 1;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        img {
+            width: 50%;
+            height: 50%; /* กำหนดความสูงเท่ากันสำหรับทุกภาพ */
+            object-fit: cover; /* ทำให้รูปภาพถูกครอบให้พอดีกับกรอบ */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to our shop MONA-MONA</h1>
+        </header>
+        <nav>
+            <div class="nav-links">
+                <a href="Home.html">หน้าแรก</a>
+                <a href="about.html">เกี่ยวกับเรา</a>
+                <a href="services.html">บริการของเรา</a>
+                <a href="contact.html">ติดต่อเรา</a>
+            </div>
+            <select onchange="location = this.value;">
+                <option value="">เลือกประเภท</option>
+                <option value="model/westbu.html">Model</option>
+                <option value="model/indexart.html">Art toy</option>
+            </select>
+        </nav>
+        <article>
+            <h2>(Article)</h2>
+            <p>เนื้อหา</p>
+            <div class="image-container">
+                <!-- บล็อกที่ 1
+                <div class="block">
+                    <img src="/โปรเจ็ก A/poto/art1/Art toy/1.jfif" alt="มอลลี่ (molly)">
+                    <h2>มอลลี่ (molly)</h2>
+                </div> -->
+
+                <!-- บล็อกที่ 2 
+                <div class="block">
+                    <img src="/โปรเจ็ก A/poto/art1/Art toy/4.webp" alt="สินค้า 2">
+                    <h2>สินค้า 2</h2>
+                </div> -->
+
+                <!-- บล็อกที่ 3 
+                <div class="block">
+                    <img src="/โปรเจ็ก A/poto/art1/Model/1.webp" alt="สินค้า 3">
+                    <h2>สินค้า 3</h2>
+                </div> -->
+            </div>
+    
+        </article>
+        <footer>
+            <p>(Footer)</p>
+        </footer>
+    </div>
+</body>
+</html>
